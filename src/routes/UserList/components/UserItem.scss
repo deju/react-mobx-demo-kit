@@ -1,0 +1,16 @@
+
+.s-users {
+    &__item {
+        min-height: 110px;
+        >img {
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+
+        >div {
+            margin-left: 120px;
+            line-height: 1.5;
+        }
+    }
+}

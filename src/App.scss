@@ -1,0 +1,34 @@
+
+.app-header {
+    
+    $app-header-padding: 50px;
+
+    border-bottom: 1px solid #ccc;
+    padding: 0 $app-header-padding;
+    position: relative;
+
+    >.ant-menu-horizontal {
+        border-bottom: none;
+    }
+
+    &__logo {
+        position: absolute;
+        left: 0;
+        top: 0;
+        line-height: 47px;
+        background-image: url(./assets/images/bitcoin.png);
+        height: 47px;
+        width: 47px;
+        background-size: 27px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.app-footer {
+
+}
+
+.s-root {
+    padding: 20px;
+}

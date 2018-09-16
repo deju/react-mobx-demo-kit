@@ -1,0 +1,41 @@
+
+.s-repos {
+
+    $repo-padding: 10px;
+
+    &__item {
+        min-height: 90px;
+        border-bottom: 1px solid #ccc;
+        padding: $repo-padding;
+        position: relative;
+
+        h3 {
+            font-size: 21px;
+            padding-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.5;
+            padding-top: 8px;
+        }
+
+        i + a {
+            margin-left: 5px;
+        }
+
+        &__op {
+            span {
+                font-size: 14px;
+                margin-right: 20px;
+                font-weight: bold;
+            }
+        }
+
+        &__lang {
+            position: absolute;
+            right: $repo-padding;
+            top: $repo-padding;
+            font-size: 12px;
+        }
+    }
+}
