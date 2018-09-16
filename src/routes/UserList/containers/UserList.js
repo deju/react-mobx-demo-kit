@@ -57,8 +57,8 @@ export default class UserList extends Component {
                     </div>
                 </Spin>
 
-                <div className="s-users__pagination" style={{textAlign: 'center'}}>
-                    <Pagination defaultCurrent={page} total={count} pageSize={30} showTotal={(total, range) => `${range[0]}-${range[1]} of ${total} items`} onChange={this.handlePageChange} />
+                <div className="s-users__pagination">
+                    <Pagination page={page} total={count} pageSize={30} showTotal={(total, range) => `${total} users`} onChange={this.handlePageChange} />
                 </div>
             </div>
         );

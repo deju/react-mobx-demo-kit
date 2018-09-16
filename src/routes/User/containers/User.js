@@ -8,9 +8,9 @@ import './User.scss';
 
 @inject("store") @observer
 export default class Detail extends Component {
+    
     constructor(props){
         super(props);
-        console.log(props.match)
         this._id = props.match.params.id
         this.store = props.store.userInfoStore;
     }
@@ -20,6 +20,7 @@ export default class Detail extends Component {
         fetchUserInfo(this._id);
         clearData();
     }
+
     renderUserKV () {
         const user = this.store.user;
         const data = processUserInfo2Table(user);
@@ -28,8 +29,6 @@ export default class Detail extends Component {
 
     render() {
         const { user } = this.store;
-        console.log(user);
-
         return (
             <div className="s-root s-user">
                 <h4 className="s-user__title">User Info</h4>

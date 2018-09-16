@@ -58,8 +58,8 @@ export default class RepositoryList extends Component {
                     </div>
                 </Spin>
 
-                <div className="s-repos__pagination" style={{textAlign: 'center'}}>
-                    <Pagination defaultCurrent={page} pageSize={30} total={count} showTotal={(total, range) => `${range[0]}-${range[1]} of ${total} items`} onChange={this.handlePageChange} />
+                <div className="s-repos__pagination">
+                    <Pagination defaultCurrent={page} pageSize={30} total={count} showTotal={(total, range) => `${total} repos`} onChange={this.handlePageChange} />
                 </div>
             </div>
         );

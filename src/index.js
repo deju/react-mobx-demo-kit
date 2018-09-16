@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import { Provider } from 'mobx-react';
 import { configure } from 'mobx';
 import * as stores from './store';
@@ -15,9 +15,10 @@ configure({ enforceActions: 'observed' })
 ReactDOM.render(
     <Provider store={stores}>
         <Router>
-        <App/>
+            <App/>
         </Router>
     </Provider>,
-    document.getElementById('root'));
+    document.getElementById('root')
+);
 
 registerServiceWorker();

@@ -25,7 +25,6 @@ class RepoInfoStore {
                 this.loading = false;
           })).catch(
             action('fetchError', e => {
-                console.log(e.message)
                 this.loading = false;
           }))
     }

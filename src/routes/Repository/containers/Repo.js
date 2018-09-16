@@ -10,7 +10,6 @@ import './Repo.scss';
 export default class Detail extends Component {
     constructor(props){
         super(props);
-        console.log(props.match)
         this._id = props.match.params['0'];
         this.store = props.store.repoInfoStore;
     }
@@ -28,8 +27,6 @@ export default class Detail extends Component {
 
     render() {
         const { repo } = this.store;
-        console.log(repo);
-
         return (
             <div className="s-root s-repo">
                 <h4 className="s-repo__title">Repo Info</h4>

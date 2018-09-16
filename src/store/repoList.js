@@ -26,12 +26,10 @@ class RepoListStore {
             action('fetchRes', res => {
                 return res.json()
             })).then(action('fetchSuccess', data => {
-                console.log(data);
                 this.loading = false;
                 this.repoList = data.items;
                 this.count = data.total_count;
             })).catch(action('fetchError', e => {
-                    console.log(e.message);
                     this.loading = false;
                 })
             );
