@@ -58,9 +58,9 @@ export default class RepositoryList extends Component {
                     </div>
                 </Spin>
 
-                <div className="s-repos__pagination">
+                {count > 0 && <div className="s-repos__pagination">
                     <Pagination defaultCurrent={page} pageSize={30} total={count} showTotal={(total, range) => `${total} repos`} onChange={this.handlePageChange} />
-                </div>
+                </div>}
             </div>
         );
   }
